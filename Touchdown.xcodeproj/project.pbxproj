@@ -30,6 +30,9 @@
 		066024332A78A023003B43B0 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066024322A78A023003B43B0 /* TitleView.swift */; };
 		066024352A78A0D3003B43B0 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066024342A78A0D3003B43B0 /* ProductModel.swift */; };
 		066024372A78A13D003B43B0 /* ProductItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066024362A78A13D003B43B0 /* ProductItemView.swift */; };
+		066024392A78A457003B43B0 /* BrandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066024382A78A457003B43B0 /* BrandModel.swift */; };
+		0660243B2A78A491003B43B0 /* BrandItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0660243A2A78A491003B43B0 /* BrandItemView.swift */; };
+		0660243D2A78A55A003B43B0 /* BrandGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0660243C2A78A55A003B43B0 /* BrandGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,9 @@
 		066024322A78A023003B43B0 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		066024342A78A0D3003B43B0 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		066024362A78A13D003B43B0 /* ProductItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemView.swift; sourceTree = "<group>"; };
+		066024382A78A457003B43B0 /* BrandModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandModel.swift; sourceTree = "<group>"; };
+		0660243A2A78A491003B43B0 /* BrandItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandItemView.swift; sourceTree = "<group>"; };
+		0660243C2A78A55A003B43B0 /* BrandGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,9 +152,11 @@
 				0660241C2A785BF5003B43B0 /* FooterView.swift */,
 				066024362A78A13D003B43B0 /* ProductItemView.swift */,
 				0660242C2A7895F5003B43B0 /* CategoryItemView.swift */,
+				0660243A2A78A491003B43B0 /* BrandItemView.swift */,
 				0660242E2A789722003B43B0 /* CategoryGridView.swift */,
 				066024302A7898A1003B43B0 /* SectionView.swift */,
 				0660241E2A787C61003B43B0 /* NavigationBarView.swift */,
+				0660243C2A78A55A003B43B0 /* BrandGridView.swift */,
 				066024322A78A023003B43B0 /* TitleView.swift */,
 				066024202A787D0E003B43B0 /* LogoView.swift */,
 				066024262A788D3C003B43B0 /* FeaturedItemView.swift */,
@@ -168,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				066024222A78809A003B43B0 /* PlayerModel.swift */,
+				066024382A78A457003B43B0 /* BrandModel.swift */,
 				0660242A2A789599003B43B0 /* CategoryModel.swift */,
 				066024342A78A0D3003B43B0 /* ProductModel.swift */,
 			);
@@ -270,15 +279,18 @@
 				0660241D2A785BF5003B43B0 /* FooterView.swift in Sources */,
 				066024272A788D3C003B43B0 /* FeaturedItemView.swift in Sources */,
 				066024372A78A13D003B43B0 /* ProductItemView.swift in Sources */,
+				0660243D2A78A55A003B43B0 /* BrandGridView.swift in Sources */,
 				0660242D2A7895F5003B43B0 /* CategoryItemView.swift in Sources */,
 				066023F92A784F3F003B43B0 /* TouchdownApp.swift in Sources */,
 				0660242F2A789722003B43B0 /* CategoryGridView.swift in Sources */,
 				0660241B2A785B0B003B43B0 /* Constants.swift in Sources */,
 				066024352A78A0D3003B43B0 /* ProductModel.swift in Sources */,
 				0660241F2A787C61003B43B0 /* NavigationBarView.swift in Sources */,
+				0660243B2A78A491003B43B0 /* BrandItemView.swift in Sources */,
 				066024312A7898A1003B43B0 /* SectionView.swift in Sources */,
 				066024292A789169003B43B0 /* FeaturedTabView.swift in Sources */,
 				066024232A78809A003B43B0 /* PlayerModel.swift in Sources */,
+				066024392A78A457003B43B0 /* BrandModel.swift in Sources */,
 				0660242B2A789599003B43B0 /* CategoryModel.swift in Sources */,
 				066024332A78A023003B43B0 /* TitleView.swift in Sources */,
 			);
