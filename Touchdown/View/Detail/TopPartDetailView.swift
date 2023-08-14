@@ -12,7 +12,7 @@ struct TopPartDetailView: View {
     
     @State private var isAnimating: Bool = false
     
-    let product = sampleProduct
+    let product: Product
     
     // MARK: - BODY
     var body: some View {
@@ -53,7 +53,7 @@ struct TopPartDetailView: View {
 
 struct TopPartDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        TopPartDetailView()
+        TopPartDetailView(product: sampleProduct)
             .previewLayout(.sizeThatFits)
             .padding()
     }

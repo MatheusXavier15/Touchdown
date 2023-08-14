@@ -10,7 +10,7 @@ import SwiftUI
 struct HeaderDetailView: View {
     // MARK: - PROPERTIES
     
-    let product = sampleProduct
+    let product: Product
     
     // MARK: - BODY
     var body: some View {
@@ -26,7 +26,7 @@ struct HeaderDetailView: View {
 
 struct HeaderDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderDetailView()
+        HeaderDetailView(product: sampleProduct)
             .previewLayout(.sizeThatFits)
             .background(colorBackground)
             .padding()

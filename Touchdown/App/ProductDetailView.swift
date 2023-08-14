@@ -10,8 +10,8 @@ import SwiftUI
 struct ProductDetailView: View {
     // MARK: - PROPERTIES
     
-    let product = sampleProduct
-    
+    let product: Product
+    @State var quantity: Int = 0
     
     // MARK: - BODY
     var body: some View {
@@ -23,12 +23,12 @@ struct ProductDetailView: View {
                 
                 // MARK: - Header
                 
-                HeaderDetailView()
+                HeaderDetailView(product: product)
                     .padding(.horizontal)
                     .foregroundColor(.white)
                 
                 // MARK: - Details
-                TopPartDetailView()
+                TopPartDetailView(product: product)
                     .padding(.horizontal)
                 
                 VStack(alignment: .center, spacing: 0, content: {
@@ -50,12 +50,12 @@ struct ProductDetailView: View {
                     
                     // MARK: - Quantity + Favourite
                     
-                    QuantityFavouriteDetailView()
+                    QuantityFavouriteDetailView(counter: $quantity)
                         .padding(.vertical, 10)
         
                     
                     // MARK: - Add to Cart
-                    AddToCartDetailView()
+                    AddToCartDetailView(product: product, quantity: $quantity)
                         .padding(.bottom, 20)
                 })
                 .padding(.horizontal)
@@ -77,6 +77,6 @@ struct ProductDetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductDetailView()
+        ProductDetailView(product: sampleProduct)
     }
 }

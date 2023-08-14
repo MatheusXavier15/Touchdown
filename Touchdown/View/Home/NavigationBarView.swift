@@ -14,9 +14,10 @@ struct NavigationBarView: View {
     
     // MARK: - BODY
     var body: some View {
+        
         HStack {
             Button {
-            
+                
             } label: {
                 Image(systemName: "magnifyingglass")
                     .font(.title)
@@ -36,20 +37,22 @@ struct NavigationBarView: View {
             
             Spacer()
             
-            Button {
-            
+            NavigationLink {
+                CartView()
             } label: {
                 ZStack {
                     Image(systemName: "cart")
                         .font(.title)
-                    .foregroundColor(.black)
+                        .foregroundColor(.black)
                     Circle()
                         .fill(Color.red)
                         .frame(width: 14, height: 14, alignment: .center)
                         .offset(x: 13, y: -10)
                 }
             }
+            
         }
+        
     }
 }
 
